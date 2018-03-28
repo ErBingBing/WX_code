@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+    <!--首页图片  -->
+    <view class="img">
+        <image src="../images/icon64_appwx_logo.png" class="logo_img"></image>
+    </view>
+
+    <!--账号input框  -->
+     <form bindsubmit="formSubmit" > 
+        <view class="logo_box">
+            <view class="section user">
+                 <i class="icon iconfont icon-caidaniconwodehui"></i>
+                <input name="user" placeholder-class="userName" placeholder="请在此输入您的登录账号"  value="{{loginName}}"/>
+            </view>
+            <!--密码input框  -->
+            <view class="section password">
+                <i class="icon iconfont icon-lock"></i>
+                <input name='password' value='{{passWord}}' type="password" placeholder-class="passwords"  placeholder="请在此输入您的登录密码" />
+            </view>
+        </view>
+       <button formType="submit" class="loginBtn">登录</button>
+     </form> 
+</view>

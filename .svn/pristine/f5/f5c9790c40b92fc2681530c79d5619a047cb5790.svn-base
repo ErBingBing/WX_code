@@ -1,0 +1,24 @@
+<!--pages/completeDetail/completeDetail.wxml-->
+<view class="table">
+  <block wx:for="{{pageList}}" wx:key="{{code}}">
+    <view class="tr">
+      <view class="td-1">地址是否有效</view>
+      <view class="td-2">{{item.isEffective}}</view>
+    </view>
+    <view class="tr">
+      <view class="td-1">外访结果</view>
+      <view class="td-2">{{item.visitState}}</view>
+    </view>
+    <view class="tr">
+      <view class="td-1">实际外访日期</view>
+      <view class="td-2">{{item.endTime}}</view>
+    </view>
+    <view class="tr">
+      <view class="td-1">外访报告</view>
+      <view class="td-2">{{item.visitReport}}</view>
+    </view>
+  </block>
+</view>  
+<view style="width:98%;margin:10px auto;border:1px solid #ccc；background:#fff;">{{visitReport}}</view>
+
+

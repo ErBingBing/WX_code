@@ -1,0 +1,124 @@
+/* pages/detailmegs/detailmegs.wxss */
+
+.table {
+  border: 0px solid darkgray;
+  background: #fff;
+  height: 100%;  
+}
+
+.tr {
+  display: flex; 
+  width: 100%;
+   /* justify-content: center; 
+   align-items: center;  */
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;    
+  height:100%;
+  line-height: 100%;    
+}
+
+.td-1 {
+  width: 27%;
+  justify-content: center; 
+  align-items: center; 
+  display: flex;  
+  text-align: center;
+  max-width: 100%;  
+  padding-left: 0px;
+  margin-left: 0px;
+  background: #ececec;
+  -webkit-box-align: center;
+  padding:26rpx 0;
+}
+
+.td-2 {
+  width: 73%;
+  justify-content: center;  
+  display: flex;    
+  text-align: center;
+  max-width: 100%;
+  -webkit-box-align: center;
+  padding:26rpx 0;
+
+}
+
+button {
+  width: 100%;
+  background-color: #ececec;
+  /* padding:20rpx; */
+   margin: auto;
+   color: #333;
+   position: fixed; 
+   bottom: 0; 
+   border-radius: 0;
+}
+
+button:after {
+  border: none;
+}
+.TexBox {
+  position: fixed;
+  width:100%;
+  bottom: 0;
+  overflow: hidden;
+  background: #ececec;
+  border-top:1px solid e1d9d9;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+.TexBoxConts {
+  display: flex;
+  justify-content: center;
+  width: 33.3%;  
+  color: #333;
+}
+.goes{
+ background:#e1d9d9;
+}
+.viewBox{
+  background:#3097d9;
+  justify-content: center;
+  position: fixed;
+  bottom:50px;
+  width:33.3%;
+  height:120px;
+  color:#ffffff;
+  }
+.record1{
+  position: fixed;
+  bottom:50px;
+  width:33.3%;
+  text-align: center;
+  height:40px;  
+  line-height:40px;
+  border-bottom: 1px solid #37abf6; 
+  font-size: 30rpx;   
+}
+.record2{
+  position: fixed;
+  bottom:90px;
+  width:33.3%;
+  text-align: center;
+  line-height: 40px; 
+  height: 40px;
+  border-bottom: 1px solid #37abf6; 
+  font-size: 30rpx;
+}
+.record3{
+  position: fixed;
+  bottom:130px;
+  width:33.3%;
+  text-align: center;
+  height: 40px;  
+  line-height: 40px; 
+  border-bottom: 1px solid #37abf6;
+  font-size: 30rpx;
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

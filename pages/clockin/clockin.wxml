@@ -1,0 +1,6 @@
+<view>
+<!-- <map id="myMap" class="my-map" show-location bindupdated="uploadEnd" longitude="{{longitude}}" latitude="{{latitude}}"  markers="{{markers}}"/> -->
+<map class="my-map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" ></map>
+
+ <button type="primary" class='sure-btn'  style='background-color:#3097d9;' bindtap="uploadLocation">确定位置</button> 
+ </view>

@@ -1,0 +1,70 @@
+<!--pages/detailmegs/detailmegs.wxml-->
+<!--‘已排程’和‘待上从’的详细页面-->
+<!--pages/detailmegs/detailmegs.wxml-->
+<view class="table" style="margin-bottom:50px;">
+    <block wx:for="{{pageList}}" wx:key="{{code}}">
+        <view class="tr">
+            <view class="td-1">风控状态</view>
+            <view class="td-2">{{item.collecStateId}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">外访姓名</view>
+            <view class="td-2">{{item.caseName}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">关系</view>
+            <view class="td-2">{{item.relation}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">委案金额</view>
+            <view class="td-2">{{item.caseMoney}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">已还款</view>
+            <view class="td-2">{{item.paidNum}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">外访地址</view>
+            <view class="td-2">{{item.visitAddress}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">外访要求</view>
+            <view class="td-2">{{item.require}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">风控员</view>
+            <view class="td-2">{{item.employeeName}}</view>
+        </view>
+        <view class="tr">
+            <view class="td-1">外访员</view>
+            <view class="td-2">{{item.visitUser}}</view>
+        </view>
+         <view class="tr">
+            <view class="td-1">预计外访日期</view>
+            <view class="td-2">{{item.visitTime}}</view>
+        </view>
+    </block>
+</view>
+
+<!--签到html  -->
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for="{{actionSheetList}}" wx:key='.this*'>
+        <action-sheet-item  bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+</action-sheet>
+
+<!--上传视频html  -->
+ <action-sheet hidden="{{uploadSheetHidden}}" bindchange="uploadSheetChange">
+    <block wx:for="{{uploadSheetList}}" wx:key='.this*'>
+        <action-sheet-item  bindtap="uploadBindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+</action-sheet> 
+
+<!--className==1 已排程页面显示签到  -->
+<!--className！=1 待上传页面格式问题  -->
+<view class="TexBox">
+    <view wx:if='{{className==1}}' class="TexBoxConts" bindtap="actionSheetTap">签到</view>
+    <view class="TexBoxConts" bindtap="uploadFile" data-flg='0'>上传附件</view>
+    <view wx:if='{{className!=1}}' class="TexBoxConts"></view>
+    <view class="TexBoxConts" bindtap="uploadFile" data-flg='1'>填写报告</view>
+</view>

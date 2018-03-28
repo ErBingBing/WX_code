@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/detail/detail",
+        "pages/detailmegs/detailmegs",
+        "pages/completeDetail/completeDetail",
+        "pages/clockin/clockin",
+        "pages/report/report"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "登录",
+        "navigationBarTextStyle": "black"
+    },
+    "networkTimeout": {
+        "request": 3000
+    }
+}
